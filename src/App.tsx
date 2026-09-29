@@ -1,5 +1,7 @@
 import './App.css'
-import { Posts } from './widgets/Posts'
+import { Paginator } from './widgets/Paginator/ui/Paginator'
+import { Todos } from './widgets/Posts'
+
 
 
 function App() {
@@ -7,7 +9,8 @@ function App() {
 
   return (
     <>
-      <Posts />
+      <Todos />
+      <Paginator />
     </>
   )
 }

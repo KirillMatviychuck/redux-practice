@@ -1,1 +1,1 @@
-export { Posts } from "./ui/Posts";
+export { Todos } from "./ui/Todos";

@@ -1,15 +1,15 @@
 import { configureStore } from '@reduxjs/toolkit'
 
-import { statusReducer } from './slices/status/statusSlice'
-import { postsReducer } from './slices/posts/postsSlice'
+import { statusReducer } from './slices/statusSlice'
+import { todosReducer } from './slices/todosSlice'
 
 
 
 
 export const store = configureStore({
     reducer: {
-        posts: postsReducer,
-        status: statusReducer
+        todos: todosReducer,
+        status: statusReducer,
     },
 })
 

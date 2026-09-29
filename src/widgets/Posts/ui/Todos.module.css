@@ -1,0 +1,21 @@
+.postWrapper {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid salmon;
+}
+
+.done {
+    height: 10px;
+    width: 10px;
+    border: 1px solid rgb(14, 209, 14);
+    border-radius: 10px;
+    background-color: rgb(14, 209, 14);
+}
+
+.active {
+    height: 10px;
+    width: 10px;
+    border: 1px solid crimson;
+    border-radius: 10px;
+    background-color: crimson;
+}

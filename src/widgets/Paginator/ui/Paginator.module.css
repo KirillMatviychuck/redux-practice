@@ -1,0 +1,17 @@
+.paginatorWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+
+.page {
+    height: 30px;
+    width: 30px;
+    border: 1px solid gray;
+    color: black;
+}
+
+.activePage {
+    background-color: rgb(184, 184, 184);
+}

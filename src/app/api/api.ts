@@ -1,12 +1,12 @@
 import axios from "axios";
-import type { Post } from "../redux/slices/posts/postsSlice";
+import type { TodoItem } from "../redux/slices/todosSlice";
 
 const instance = axios.create({
     baseURL: 'https://jsonplaceholder.typicode.com'
 })
 
-export const postsAPI = {
+export const todosAPI = {
     getAll() {
-        return instance.get<Post[]>('/posts')
+        return instance.get<TodoItem[]>('/todos')
     }
 }
