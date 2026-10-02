@@ -1,5 +1,4 @@
-import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
-
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState: StatusState = {
     status: 'idle'
@@ -9,15 +8,10 @@ const initialState: StatusState = {
 export const statusSlice = createSlice({
     name: 'status',
     initialState,
-    reducers: {
-        changeStatus: (state, action: PayloadAction<Statuses>) => {
-            state.status = action.payload
-        }
-    }
+    reducers: {},
 })
 
 
-export const { changeStatus } = statusSlice.actions
 export const statusReducer = statusSlice.reducer
 
 

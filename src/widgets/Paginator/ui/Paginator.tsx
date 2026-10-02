@@ -1,11 +1,12 @@
+import type { FC } from "react"
 import { useAppDispatch, useAppSelector } from "../../../app/redux/hooks"
 import { setPage } from "../../../app/redux/slices/todosSlice"
 
 import cls from './Paginator.module.css'
 
-export const Paginator = () => {
+export const Paginator: FC<PaginatorProps> = ({ totalPages }) => {
     const dispatch = useAppDispatch()
-    const { totalPages, currentPage } = useAppSelector(state => state.todos)
+    const { currentPage } = useAppSelector(state => state.todos)
     const pages = Array.from(
         { length: totalPages },
         (_, index) => index + 1
@@ -25,4 +26,8 @@ export const Paginator = () => {
             ))}
         </div>
     )
+}
+
+interface PaginatorProps {
+    totalPages: number
 }

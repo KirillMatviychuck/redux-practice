@@ -10,6 +10,7 @@
     width: 30px;
     border: 1px solid gray;
     color: black;
+    cursor: pointer;
 }
 
 .activePage {
