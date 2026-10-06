@@ -1,6 +1,6 @@
 import type { FC } from "react"
 import { useAppDispatch, useAppSelector } from "../../../app/redux/hooks"
-import { setPage } from "../../../app/redux/slices/todosSlice"
+import { setPage } from "../../../app/redux/slices/todosSlices/todosSlice"
 
 import cls from './Paginator.module.css'
 

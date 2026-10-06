@@ -1,5 +1,6 @@
 import './App.css'
-import { useGetAllTodosQuery } from './app/api/todosAPI'
+import { useGetAllTodosQuery } from './app/api/todosAPI/todosAPI'
+
 import { Paginator } from './widgets/Paginator/ui/Paginator'
 import { Todos } from './widgets/Todos'
 

@@ -25,7 +25,7 @@ export const todosSlice = createSlice({
     }
 })
 
-export const { setPage } = todosSlice.actions
+export const { setPage, setActive, setAll, setDone } = todosSlice.actions
 export const todosReducer = todosSlice.reducer
 
 export type Filter = 'all' | 'active' | 'done'

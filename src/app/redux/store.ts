@@ -1,7 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit'
 
 import { statusReducer } from './slices/statusSlice'
-import { todosReducer } from './slices/todosSlice'
+import { todosReducer } from './slices/todosSlices/todosSlice'
 import { todosApi } from '../api/todosAPI'
 
 
